@@ -11,3 +11,9 @@ foreach (var student in Klasse.StudentList)
 {
     Console.WriteLine(student.BirthYear);
 }
+foreach (var student in Klasse.StudentList)
+{
+    Console.WriteLine(student.Season());
+}
+
+Klasse.WhatSeason();
