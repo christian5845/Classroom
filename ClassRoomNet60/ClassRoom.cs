@@ -7,18 +7,16 @@ using System.Threading.Tasks;
 
 public class ClassRoom
 {
-    public string CLassName { get; }
+    public string ClassName { get; }
     public List<Student> StudentList { get; set; }
     public DateTime SemesterStart { get; private set; }
 
-    public ClassRoom(string className, DateTime semesterstart)
+    public ClassRoom(string className, DateTime semesterStart)
     {
-        className = className;
+        ClassName = className;
         StudentList = new List<Student>();
-        semesterstart = new ();
+        SemesterStart = new();
     }
-
-
 }
     
 

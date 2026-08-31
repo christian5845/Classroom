@@ -3,19 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System;
 
 public class Student
 {
-    public string Name { get; private set; }
-    public int BirthMonth { get; private set; }
-    public int BirthYear { get; private set; }
+    public string Name { get; }
+    public int BirthMonth { get; }
+    public int BirthYear { get; }
 
 
     public Student (string name, int birthMonth, int birthYear)
     {
-        name = Name;
-        birthMonth = BirthMonth;
-        birthYear = BirthYear;
+        Name = name;
+        BirthMonth = birthMonth;
+        BirthYear = birthYear;
 
     }
 }
