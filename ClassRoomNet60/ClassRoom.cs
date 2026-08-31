@@ -9,13 +9,13 @@ public class ClassRoom
 {
     public string CLassName { get; }
     public List<Student> StudentList { get; set; }
-    public DateTime SemesterStart { get; }
+    public DateTime SemesterStart { get; private set; }
 
-    public ClassRoom(string className, List<Student> studentList, DateTime semesterStart)
+    public ClassRoom(string className, DateTime semesterstart)
     {
         className = className;
-        studentList = new List<Student>();
-        semesterStart = SemesterStart;
+        StudentList = new List<Student>();
+        semesterstart = new ();
     }
 
 
